@@ -1,8 +1,0 @@
-#include "Iphone_X\dialogs.cpp"
-#include "Dispatch\dialogs.cpp"
-#include "Phone\dialogs.cpp"
-#include "Factures\dialogs.cpp"
-#include "Gouvernement\dialogs.cpp"
-#include "Eway\dialogs.cpp"
-#include "RepairJob\dialogs.cpp"
-#include "Fourriere\dialogs.cpp"

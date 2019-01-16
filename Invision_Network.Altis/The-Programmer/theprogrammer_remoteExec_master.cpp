@@ -1,5 +1,0 @@
-#include "Phone\remoteExec.cpp"
-#include "Factures\remoteExec.cpp"
-#include "Gouvernement\remoteExec.cpp"
-#include "Eway\remoteExec.cpp" 
-#include "Fourriere\remoteExec.cpp"
