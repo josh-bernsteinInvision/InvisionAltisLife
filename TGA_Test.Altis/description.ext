@@ -6,6 +6,7 @@ disableChannels[]={0,1,2};
 #include "Config_Master.hpp"
 #include "infiSTAR_AdminMenu.hpp"
 #include "The-Programmer\theprogrammer_dialog_master.cpp"
+#include "cation\cation_master.cpp"
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -25,6 +26,7 @@ class RscTitles {
 
 class CfgFunctions {
     #include "Functions.hpp"
+	#include "cation\cation_functions.cpp"
 };
 
 class CfgSounds {

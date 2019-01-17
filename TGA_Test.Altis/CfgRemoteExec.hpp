@@ -12,6 +12,7 @@ class CfgRemoteExec {
         mode = 1;
         jip = 0;
 		#include "The-Programmer\theprogrammer_remoteExec_master.cpp"
+		#include "cation\cation_remoteExec.cpp"
 
         /* Client only functions */
         F(life_fnc_addVehicle2Chain,CLIENT)

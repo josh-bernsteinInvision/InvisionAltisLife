@@ -1,7 +1,7 @@
-#include "player_sys.sqf"
+
 
 class playerSettings {
-    idd = playersys_DIALOG;
+    idd = 3000;
     movingEnable = 1;
     enableSimulation = 1;
 
@@ -17,7 +17,7 @@ class playerSettings {
 
         class MainBackground: Life_RscText {
             colorBackground[] = {0, 0, 0, 0.7};
-            idc = -1;
+            idc = -
             x = 0.1;
             y = 0.2 + (11 / 250);
             w = 0.8;
@@ -284,6 +284,17 @@ class playerSettings {
 			y = 0.805; 
 			w = (6.25 / 40); 
 			h = (1 / 25); 
+		};
+		class ButtonCrafting: Life_RscButtonMenu {
+			idc = 2021;
+			text = "Crafting";
+			onButtonClick = "closeDialog 0; [""Variablennamen""] spawn cat_crafting_fnc_craft;";
+			x = 0.465969 * safezoneW + safezoneX;
+			y = 0.66874 * safezoneH + safezoneY;
+			w = 0.0644531 * safezoneW;
+			h = 0.022 * safezoneH;
+			colorText[] = {1,1,1,1};
+			colorBackground[] = {0,0,0,0.8};
 		};
     };
 };
