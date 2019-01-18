@@ -288,7 +288,7 @@ class playerSettings {
 		class ButtonCrafting: Life_RscButtonMenu {
 			idc = 2021;
 			text = "Crafting";
-			onButtonClick = "closeDialog 0; [""Variablennamen""] spawn cat_crafting_fnc_craft;";
+			onButtonClick = "closeDialog 0; [""craftingItems""] spawn cat_crafting_fnc_craft;";
 			x = 0.465969 * safezoneW + safezoneX;
 			y = 0.66874 * safezoneH + safezoneY;
 			w = 0.0644531 * safezoneW;
