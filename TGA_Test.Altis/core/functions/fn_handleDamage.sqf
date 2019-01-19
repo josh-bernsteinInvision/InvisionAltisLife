@@ -12,6 +12,7 @@ _part = _this select 1;
 _damage = _this select 2;
 _source = _this select 3;
 _projectile = _this select 4;
+_﻿originalDamage = if (_part == "") then {damage _unit} else {_unit ge﻿tHit _p﻿art};
 
 //Handle the tazer first (Top-Priority).
 if (!isNull _source) then {
@@ -44,6 +45,9 @@ if (!isNull _source) then {
         };
     };
 };
-
+if ((vehicle _unit) isKindOf "Car" && (isNull _source || _source isEqualTo _unit)) then
+{
+	_damage = if (life_seatbelt) then { _damage = 0 } else { _damage};
+};
 [] spawn life_fnc_hudUpdate;
 _damage;

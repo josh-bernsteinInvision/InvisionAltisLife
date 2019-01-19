@@ -11,6 +11,7 @@ StartProgress = false;
 [] execVM "KRON_Strings.sqf";
 [] execvM "SafeZone.sqf";
 [] spawn theprogrammer_core_fnc_clientInit;
+[] execVM "core\items\fn_itemStolen.sqf";
 
 if(isDedicated && isNil("life_market_prices")) then
 {
